@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Application</title>
+</head>
+<style>
+.no{
+    display: none;
+}
+    
+</style>
+<body>
+    <h1>Quiz Application</h1>
+
+    <div id="show1" class="">
+        <fieldset>
+            <p>1. How do you write 'Hello World' in an alert box?</p>
+            <input name="question" id="q1-1" type="radio">msg('Hello World')<br>
+            <input name="question" id="q1-2" type="radio">msgBox('Hello World')<br>
+            <input name="question" id="q1-3" type="radio">alertBox('Hello World')<br>
+            <input name="question" id="q1-4" type="radio">alert('Hello World')
+        </fieldset>
+        <button onclick="check()">next</button>
+    </div>
+    <br><br>
+
+    <div id="show2" class="no">
+        <fieldset>
+            <p>2. How to empty an array in JavaScript?</p>
+            <input name="array" id="q2-1" type="radio">arrayList[]<br>
+            <input name="array" id="q2-2" type="radio">arrayList(0)<br>
+            <input name="array" id="q2-3" type="radio">arrayList.length=0<br>
+            <input name="array" id="q2-4" type="radio">arrayList.len(0)
+        </fieldset>
+        <button onclick="check2()">next</button>
+    </div>
+    <br><br>
+    
+    <div id="show3" class="no">
+        <fieldset>
+            <p>3. What function to add an element at the begining of an array and one at the end?</p>
+            <input name="funtion" id="q3-1" type="radio">push,unshift<br>
+            <input name="funtion" id="q3-2" type="radio">unshift,push<br>
+            <input name="funtion" id="q3-3" type="radio">first,push<br>
+            <input name="funtion" id="q3-4" type="radio">unshift,last
+        </fieldset>
+        <button onclick="check3()">next</button>
+    </div>
+    <br><br>
+
+    <div id="show4" class="no">
+        <fieldset>
+            <p>4. What would following code return? "console.log(typeof "1")"</p>
+            <input name="reture" id="q4-1" type="radio">string<br>
+            <input name="reture" id="q4-2" type="radio">number<br>
+            <input name="reture" id="q4-3" type="radio">Syntax error<br>
+            <input name="reture" id="q4-4" type="radio">undefined
+        </fieldset>
+        <button onclick="check4()">next</button>
+    </div>
+    <br><br>
+
+    <div id="show5" class="no">
+        <fieldset>
+            <p>5. Which software company developed JavaScript?</p>
+            <input name="software" id="q5-1" type="radio">Mozilla<br>
+            <input name="software" id="q5-2" type="radio">Netscape<br>
+            <input name="software" id="q5-3" type="radio">Sun Microsystems<br>
+            <input name="software" id="q5-4" type="radio">Oracle
+        </fieldset>
+        <button onclick="result()">next</button>
+    </div>
+
+    
+
+    
+
+
+
+
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
